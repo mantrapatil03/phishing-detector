@@ -1,6 +1,45 @@
 # phishing-detector
+```
+Repo structure (now implemented)
 
-
+phishing-detection/
+├── README.md
+├── requirements.txt
+├── pyproject.toml
+├── .gitignore
+├── .env.example
+├── Dockerfile
+├── docker-compose.yml
+├── data/
+│   ├── sample_urls.csv
+│   └── processed.parquet
+├── src/
+│   ├── __init__.py
+│   ├── config.py
+│   ├── logging_config.py
+│   ├── utils.py
+│   ├── data_processing.py
+│   ├── features.py
+│   ├── model.py
+│   ├── train.py
+│   ├── evaluate.py
+│   ├── predict.py
+│   ├── api.py
+│   ├── screenshot.py
+│   └── ml_helpers.py
+├── notebooks/
+│   └── EDA_and_experiments.ipynb
+├── tests/
+│   ├── test_features.py
+│   ├── test_data_processing.py
+│   └── test_api.py
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+├── models/
+│   └── baseline.joblib
+└── LICENSE
+```
 ```
 phishing-detector/
 ├── app/                            # Flask app + detectors
@@ -49,7 +88,7 @@ REST API for real-time scanning
 CLI scanner for batch checks
 
 Docker-ready and CI-tested
-
+```
 Tech stack
 
 Python 3.10+
@@ -65,7 +104,8 @@ BeautifulSoup4 (HTML analysis)
 pytest (tests)
 
 Docker
-
+```
+```
 GitHub Actions for lint/test
 
 Repo layout
@@ -91,7 +131,7 @@ phishing-detector/
 └── .github/
     ├── workflows/ci.yml
     └── ISSUE_TEMPLATE.md
-
+```
 Quick start
 1. Clone and install
 git clone https://github.com/<your-org>/phishing-detector.git
