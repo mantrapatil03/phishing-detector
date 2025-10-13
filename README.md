@@ -21,7 +21,7 @@
 </p>
 
 ---
-
+ 
 > ⚡ **A modular, production-ready phishing website detection system**.  
 
 
@@ -321,6 +321,8 @@ Contributions are welcome!
 ## 🧠 Maintainers
 
 Author: **Mantra Patil**
+
+[LinkedIn – Mantra Patil](https://www.linkedin.com/in/mantrapatil25/) 
 
 GitHub: https://github.com/mantrapatil03
 
