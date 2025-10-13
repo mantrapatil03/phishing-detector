@@ -1,10 +1,28 @@
-# 🛡️ Phishing Detection  
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Build](https://img.shields.io/github/actions/workflow/status/mantrapatil03/phishing-detection/ci.yml?label=CI%2FCD)
-![Docker](https://img.shields.io/badge/Docker-ready-blue.svg)
-![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)
+<h1 align="center">🛡️ Phishing Detection</h1>
+
+<p align="center">
+  <b>Machine Learning powered phishing website detector using URL & HTML analysis</b>  
+  <br>
+  Built with <code>Python</code> • <code>scikit-learn</code> • <code>Flask</code> • <code>BeautifulSoup</code>
+</p>
+
+<p align="center">
+  <a href="https://github.com/mantrapatil03/phishing-detection/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/<your-username>/phishing-detection/ci.yml?label=CI%2FCD&logo=github" />
+  </a>
+  <img src="https://img.shields.io/badge/Python-3.10+-blue.svg" />
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" />
+  <img src="https://img.shields.io/badge/Docker-ready-blue.svg" />
+  <img src="https://img.shields.io/badge/tests-passing-brightgreen.svg" />
+  <br><br>
+  <a href="https://github.com/mantrapatil03/phishing-detection/stargazers"><img src="https://img.shields.io/github/stars/<your-username>/phishing-detection?style=social" /></a>
+  <a href="https://github.com/mantrapatil03/phishing-detection/network/members"><img src="https://img.shields.io/github/forks/<your-username>/phishing-detection?style=social" /></a>
+</p>
+
+---
+
+> ⚡ **A modular, production-ready phishing website detection system**.  
 
 
 A **modular Python project** for **detecting phishing websites** using URL and HTML features extracted via `BeautifulSoup`, trained on a Random Forest model from `scikit-learn`.
@@ -312,3 +330,4 @@ Email: techmantrapatil@gmail.com
 ## 🌟 Support
 
 ***If you find this project useful, please ⭐ star this repository and share it with others!***
+
