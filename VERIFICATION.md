@@ -5,7 +5,7 @@ The Phishing Detection project enforces strict cryptographic and operational ver
 ## 1. Model Integrity Verification
 Every model distributed through this repository (`/models/*.joblib`) includes a SHA-256 hash for verification.
 
-**✅ Verification Steps**
+** Verification Steps**
 
 Run the built-in helper before loading a model:
 ```python
@@ -29,7 +29,8 @@ Integrity check failed: possible tampering or corruption detected.
 ## 2. Dependency Trust & Validation
 We ensure reproducibility and trust in dependencies.
 
-**🧩 Verification Checklist**
+** Verification Checklist **
+
 | Step               | Tool                  | Purpose                                 |
 | ------------------ | --------------------- | --------------------------------------- |
 | Dependency Lock    | `requirements.txt`    | Ensures version consistency             |
