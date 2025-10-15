@@ -14,12 +14,12 @@ This document defines our security practices, responsible disclosure guidelines,
 
 >Always deploy the latest stable version. Outdated dependencies or models may expose security risks.
 
-## 📣 Reporting a Vulnerability
+## Reporting a Vulnerability
 
 We take all security reports seriously.
 If you discover a vulnerability, please report it privately and responsibly.
 
-**📬 Contact Options**
+** Contact Options**
 
 - Email: techmantrapatil@gmail.com
 - Optional PGP Encryption:
@@ -132,7 +132,7 @@ For Deployers
 
 - Configure security headers (HSTS, CSP, X-Frame-Options).
 
-## 🧾 Security Audit & Compliance Log
+## Security Audit & Compliance Log
 | Date       | Scope            | Action Taken                                      | Status |
 | ---------- | ---------------- | ------------------------------------------------- | ------ |
 | 2025-10-12 | Repo Setup       | Added advanced `SECURITY.md` & CI hardening       | ✅      |
