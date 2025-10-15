@@ -1,11 +1,11 @@
 # Phishing Detection — Security Policy & Responsible Disclosure
 
-## 🔖 Overview
+## Overview
 
 The Phishing Detection project prioritizes security, privacy, and model integrity across all stages — from data ingestion to deployment.
 This document defines our security practices, responsible disclosure guidelines, and risk mitigation strategies for contributors, users, and researchers.
 
-## 🧩 Supported Versions
+## Supported Versions
 | Version              | Supported | Notes                                    |
 | -------------------- | --------- | ---------------------------------------- |
 | `main` (latest)      | ✅         | Actively maintained and patched.         |
@@ -42,7 +42,7 @@ Our Commitment
 - Response: within 48–72 hours
 - Verification & Fix: within 7–14 business days
 
-## 🔐 Responsible Disclosure Policy
+## Responsible Disclosure Policy
 
 To protect the community and our users:
 
@@ -58,7 +58,7 @@ We commit to:
 - Fair credit and recognition.
 - Non-retaliation toward researchers acting in good faith.
 
-## 🧠 Machine Learning Security Policy
+## Machine Learning Security Policy
 
 1. Model Integrity & Verification
 
@@ -87,7 +87,7 @@ We commit to:
 
     - Use `dotenv` and encrypted storage for runtime secrets.
 
-## 🐳 Deployment & Infrastructure Security
+## Deployment & Infrastructure Security
 
 | Category           | Recommended Practice                                                            |
 | ------------------ | ------------------------------------------------------------------------------- |
@@ -100,7 +100,7 @@ We commit to:
 | **Logging**        | Sanitize logs to prevent leakage of sensitive URLs or credentials.              |
 | **Monitoring**     | Integrate with centralized SIEM systems (ELK, Grafana Loki, Wazuh).             |
 
-## 🧪 Continuous Security Integration (CI/CD)
+## Continuous Security Integration (CI/CD)
 
 This repository uses GitHub Actions (.github/workflows/ci.yml) for automated security enforcement:
 
@@ -112,7 +112,7 @@ This repository uses GitHub Actions (.github/workflows/ci.yml) for automated sec
 | Container Scan       | `aquasecurity/trivy-action` | Checks Docker image CVEs              |
 | Secrets Scan         | `gitleaks`                  | Prevents secret leakage during commit |
 
-## 🧱 Hardening Guidelines
+## Hardening Guidelines
 
 For Contributors
 
@@ -139,13 +139,13 @@ For Deployers
 | 2025-09-30 | Dependency Audit | Upgraded `scikit-learn`, `pandas`, and `requests` | ✅      |
 | 2025-09-18 | Docker Review    | Implemented non-root user & pinned base image     | ✅      |
 
-## ⚖️ Legal Notice
+## Legal Notice
 
 This project is distributed under the MIT License (see `LICENSE`).
 All contributors and users agree not to use this project for illegal, malicious, or unauthorized surveillance activities.
 Maintainers are not liable for misuse or derivative works deployed outside ethical and educational contexts.
 
-## 🧭 Final Note
+## Final Note
 
 - Security is a continuous process.
 - We encourage collaboration, responsible research, and ethical development to make phishing detection and machine learning safer for all.
