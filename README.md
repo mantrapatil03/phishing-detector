@@ -249,6 +249,7 @@ GitHub Actions (`.github/workflows/ci.yml`):
 ```
 phishing-detection/
 ├── README.md
+├── VERIFICATION.md
 ├── requirements.txt
 ├── pyproject.toml
 ├── .gitignore
