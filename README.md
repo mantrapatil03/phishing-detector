@@ -22,7 +22,7 @@
 
 ---
  
-> ⚡ **A modular, production-ready phishing website detection system**.  
+> **A modular, production-ready phishing website detection system**.  
 
 
 A **modular Python project** for **detecting phishing websites** using URL and HTML features extracted via `BeautifulSoup`, trained on a Random Forest model from `scikit-learn`.
