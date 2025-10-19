@@ -335,4 +335,4 @@ Email: techmantrapatil@gmail.com
 
 ***If you find this project useful, please ⭐ star this repository and share it with others!***
 
-<p align="center"> <sub>Built with ❤️ by the shree organization — Stay safe online 🕵️‍♂️</sub> </p>
+<p align="center"> <sub>Built with ❤️ by the CodeM03 organization — Stay safe online 🕵️‍♂️</sub> </p>
