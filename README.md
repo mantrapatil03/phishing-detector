@@ -1,5 +1,5 @@
 
-<h1 align="center">🛡️ Phishing Detection</h1>
+<h1 align="center"> Phishing Detection</h1>
 
 <p align="center">
   <b>Machine Learning powered phishing website detector using URL & HTML analysis</b>  
@@ -28,7 +28,7 @@
 A **modular Python project** for **detecting phishing websites** using URL and HTML features extracted via `BeautifulSoup`, trained on a Random Forest model from `scikit-learn`.
 Includes data processing, training, prediction (CLI + API), evaluation, testing, Docker support, and CI/CD.
 
-## 🚀 Features
+## Features
 
 - **Data Processing**
     - Load URLs/labels from CSV
@@ -79,7 +79,7 @@ Includes data processing, training, prediction (CLI + API), evaluation, testing,
 >💡 Uses synthetic data by default. Replace data/sample_urls.csv with real labeled data
 >(url,label) for production use.
 
-## ⚙️ Quick Start
+## Quick Start
 
 ### 1️⃣ Setup
 ```bash
@@ -173,7 +173,7 @@ Run to explore:
 
 - Model tuning experiments
 
-## 🧩 Development Notes
+## Development Notes
 
 - Logging → Configured via `src/logging_config.py` (`LOG_LEVEL` in `.env`)
 
@@ -203,7 +203,7 @@ Run to explore:
 black .  # line-length = 88 (pyproject.toml)
 ```
 
-## 🐳 Deployment
+## Deployment
 
 **Docker**
 ```bash
@@ -233,7 +233,7 @@ docker-compose up
   
 - Implement auth & rate-limiting for API
 
-## ⚡ CI/CD
+## CI/CD
 
 GitHub Actions (`.github/workflows/ci.yml`):
 
@@ -245,7 +245,7 @@ GitHub Actions (`.github/workflows/ci.yml`):
     - Train, evaluate, and test model
     - Verify model/parquet generation
 
-## 🗂️ Project Structure
+## Project Structure
 ```
 phishing-detection/
 ├── README.md
@@ -295,7 +295,7 @@ phishing-detection/
 └── LICENSE
 ```
 
-## ⚠️ Limitations & Next Steps
+## Limitations & Next Steps
 
 | Area            | Current            | Next Steps                                     |
 | --------------- | ------------------ | ---------------------------------------------- |
@@ -306,7 +306,7 @@ phishing-detection/
 | **Performance** | Synchronous fetch  | Switch to async (`aiohttp`)                    |
 
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repo
 
@@ -320,7 +320,7 @@ phishing-detection/
 
 Contributions are welcome!
 
-## 🧠 Maintainers
+## Maintainers
 
 Author: **Mantra Patil**
 
@@ -331,7 +331,7 @@ GitHub: https://github.com/mantrapatil03
 Email: techmantrapatil@gmail.com
 
 
-## 🌟 Support
+## Support
 
 ***If you find this project useful, please ⭐ star this repository and share it with others!***
 
