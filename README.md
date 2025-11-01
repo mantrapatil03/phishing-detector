@@ -16,8 +16,8 @@
   <img src="https://img.shields.io/badge/Docker-ready-blue.svg" />
   <img src="https://img.shields.io/badge/tests-passing-brightgreen.svg" />
   <br><br>
-  <a href="https://github.com/mantrapatil03/phishing-detection/stargazers"><img src="https://img.shields.io/github/stars/<your-username>/phishing-detection?style=social" /></a>
-  <a href="https://github.com/mantrapatil03/phishing-detection/network/members"><img src="https://img.shields.io/github/forks/<your-username>/phishing-detection?style=social" /></a>
+  <a href="https://github.com/mantrapatil03/phishing-detection/stargazers"><img src="https://img.shields.io/github/stars/mantraptil03/phishing-detection?style=social" /></a>
+  <a href="https://github.com/mantrapatil03/phishing-detection/network/members"><img src="https://img.shields.io/github/forks/mantrapatil03/phishing-detection?style=social" /></a>
 </p>
 
 ---
