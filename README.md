@@ -9,15 +9,21 @@
 
 <p align="center">
   <a href="https://github.com/mantrapatil03/phishing-detection/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/<your-username>/phishing-detection/ci.yml?label=CI%2FCD&logo=github" />
+    <img src="https://img.shields.io/github/actions/workflow/status/mantrapatil03/phishing-detection/ci.yml?label=CI%2FCD&logo=github" alt="CI/CD" />
   </a>
-  <img src="https://img.shields.io/badge/Python-3.10+-blue.svg" />
-  <img src="https://img.shields.io/badge/License-MIT-green.svg" />
-  <img src="https://img.shields.io/badge/Docker-ready-blue.svg" />
-  <img src="https://img.shields.io/badge/tests-passing-brightgreen.svg" />
+  <img src="https://img.shields.io/badge/Python-3.10%2B-blue.svg" alt="Python 3.10+" />
+  <a href="https://github.com/mantrapatil03/phishing-detection/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT" />
+  </a>
+  <img src="https://img.shields.io/badge/Docker-ready-blue.svg" alt="Docker ready" />
+  <img src="https://img.shields.io/badge/tests-passing-brightgreen.svg" alt="Tests passing" />
   <br><br>
-  <a href="https://github.com/mantrapatil03/phishing-detection/stargazers"><img src="https://img.shields.io/github/stars/mantraptil03/phishing-detection?style=social" /></a>
-  <a href="https://github.com/mantrapatil03/phishing-detection/network/members"><img src="https://img.shields.io/github/forks/mantrapatil03/phishing-detection?style=social" /></a>
+  <a href="https://github.com/mantrapatil03/phishing-detection/stargazers">
+    <img src="https://img.shields.io/github/stars/mantrapatil03/phishing-detection?style=social" alt="GitHub stars" />
+  </a>
+  <a href="https://github.com/mantrapatil03/phishing-detection/network/members">
+    <img src="https://img.shields.io/github/forks/mantrapatil03/phishing-detection?style=social" alt="GitHub forks" />
+  </a>
 </p>
 
 ---
