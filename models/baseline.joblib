@@ -1,0 +1,43 @@
+# Let's create a baseline.joblib file for your phishing detection project
+
+import pandas as pd
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.pipeline import Pipeline
+import joblib
+import os
+
+# Sample URLs dataset for baseline model
+data = pd.DataFrame({
+    "url": [
+        "http://example.com",
+        "http://192.168.0.1/login",
+        "http://secure-login.example.com/account",
+        "http://free-prizes.example.com",
+        "http://bank.example.com/login"
+    ],
+    "label": [
+        "benign",
+        "phishing",
+        "phishing",
+        "phishing",
+        "phishing"
+    ]
+})
+
+# Create a simple Naive Bayes pipeline
+pipeline = Pipeline([
+    ('vectorizer', CountVectorizer()),
+    ('classifier', MultinomialNB())
+])
+
+# Train the model
+pipeline.fit(data['url'], data['label'])
+
+# Create models directory if it doesn't exist
+os.makedirs('models', exist_ok=True)
+
+# Save the trained pipeline as baseline.joblib
+joblib.dump(pipeline, 'models/baseline.joblib')
+
+"baseline.joblib has been created in the models/ directory."
