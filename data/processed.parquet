@@ -1,0 +1,22 @@
+python3 - <<EOF
+import pandas as pd, os
+data_file = "data/sample_urls.csv"
+# Load CSV if exists, else use default sample data
+data = pd.read_csv(data_file) if os.path.exists(data_file) else pd.DataFrame({
+    'url': [
+        'http://example.com',
+        'http://192.168.0.1/login',
+        'http://secure-login.example.com/account',
+        'http://free-prizes.example.com',
+        'http://bank.example.com/login'
+    ],
+    'label': ['benign', 'phishing', 'phishing', 'phishing', 'phishing']
+})
+# Preprocess: lowercase URLs
+data['url'] = data['url'].str.lower()
+# Ensure data directory exists
+os.makedirs("data", exist_ok=True)
+# Save as processed.parquet
+data.to_parquet("data/processed.parquet", index=False)
+print("✅ processed.parquet created at data/processed.parquet")
+EOF

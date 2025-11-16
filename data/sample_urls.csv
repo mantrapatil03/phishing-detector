@@ -1,0 +1,7 @@
+url,label
+https://example.com,0
+http://phishingsite.ru/login,1
+https://google.com,0
+http://fakebank.com@realbank.com,1
+https://paypal.com,0
+http://suspicious.ip.addr:8080,1
