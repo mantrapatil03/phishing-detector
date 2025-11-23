@@ -9,42 +9,43 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - uses: actions/checkout@v3
-    
-    - name: Set up Python 3.9
-      uses: actions/setup-python@v4
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
       with:
-        python-version: 3.9
-    
+        python-version: "3.11"
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        pip install black  # For linting
-    
+        pip install "black[jupyter]" pytest
+
     - name: Lint with Black
       run: black --check .
-    
-    - name: Create sample data (for CI)
+
+    - name: Create sample data for CI
       run: |
+        mkdir -p data
         echo "url,label" > data/sample_urls.csv
         echo "https://example.com,0" >> data/sample_urls.csv
         echo "http://phishingsite.ru/login,1" >> data/sample_urls.csv
         echo "https://google.com,0" >> data/sample_urls.csv
         echo "http://fakebank.com@realbank.com,1" >> data/sample_urls.csv
-    
+
     - name: Train model
       run: python -m src.train
-    
+
     - name: Evaluate model
       run: python -m src.evaluate
-    
+
     - name: Run tests
-      run: pytest tests/ -v --disable-warnings
-    
-    - name: Check for generated files
+      run: pytest -q --disable-warnings
+
+    - name: Validate generated files
       run: |
         test -f models/baseline.joblib
         test -f data/processed.parquet
