@@ -329,22 +329,14 @@ Contributions are welcome!
 ## Maintainers
 
 - Author: **Mantra Patil**
-
-[LinkedIn – Mantra Patil](https://www.linkedin.com/in/mantrapatil25/) 
-
-
-
-GitHub: https://github.com/mantrapatil03
-
-Email: techmantrapatil@gmail.com
+    - [LinkedIn – Mantra Patil](https://www.linkedin.com/in/mantrapatil25/) 
+    - GitHub: https://github.com/mantrapatil03
+    - Email: techmantrapatil@gmail.com
 
 - Maintain by **Shree Organization** 
-
-[LinkedIn – Shree Organization ](https://www.linkedin.com/company/shree-org/)
-
-Email: organizationshree@gmail.com
-
-GitHub: https://github.com/Shree-Organization
+    - [LinkedIn – Shree Organization ](https://www.linkedin.com/company/shree-org/)
+    - Email: organizationshree@gmail.com
+    - GitHub: https://github.com/Shree-Organization
 
 - Build by [CodeM03](https://www.linkedin.com/company/codem03/) 
 
