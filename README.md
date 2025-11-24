@@ -1,3 +1,4 @@
+<p align="center"> <img width="86" height="101" alt="AdobeExpressPhotos_9279b6ce928c41b08c2186ca455689d0_CopyEdited" src="https://github.com/user-attachments/assets/51e5c1e1-7d29-43ed-8fde-e8bed0b2fdaa" />
 
 <h1 align="center"> Phishing Detection</h1>
 
