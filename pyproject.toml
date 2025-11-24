@@ -5,10 +5,15 @@ testpaths = ["tests"]
 python_files = "test_*.py"
 python_classes = "Test*"
 python_functions = "test_*"
+pythonpath = ["."]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::UserWarning"
+]
 
 [tool.black]
 line-length = 88
-target-version = ["py311"]   # switch if your env uses 3.9 or 3.10
+target-version = ["py311"]
 include = '\.pyi?$'
 
 exclude = '''
@@ -17,10 +22,9 @@ exclude = '''
   | \.git
   | \.hg
   | \.mypy_cache
+  | \.pytest_cache
   | \.tox
   | \.venv
-  | _build
-  | buck-out
   | build
   | dist
   | notebooks
