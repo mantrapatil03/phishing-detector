@@ -18,6 +18,9 @@
   </a>
   <img src="https://img.shields.io/badge/Docker-ready-blue.svg" alt="Docker ready" />
   <img src="https://img.shields.io/badge/tests-passing-brightgreen.svg" alt="Tests passing" />
+  <a href="https://github.com/mantrapatil03/phishing-detector/wiki" />
+  <img src="https://img.shields.io/badge/Wiki-Documentation-blue.svg" alt="Wiki" />
+  </a>
   <br><br>
   <a href="https://github.com/mantrapatil03/phishing-detection/stargazers">
     <img src="https://img.shields.io/github/stars/mantrapatil03/phishing-detection?style=social" alt="GitHub stars" />
