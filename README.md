@@ -91,8 +91,13 @@ Includes data processing, training, prediction (CLI + API), evaluation, testing,
 ```bash
 git clone https://github.com/mantrapatil03/phishing-detector phishing-detection
 cd phishing-detection
+```
+```
+python3 -m venv venv                                
+source venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env
+
+#cp .env.example .env
 # (Edit paths/config in .env if needed)
 ```
 
