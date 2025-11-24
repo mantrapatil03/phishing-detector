@@ -2,7 +2,7 @@
 Data processing module.
 Loads CSV, extracts features, saves Parquet.
 """
-
+import os 
 import pandas as pd
 import logging
 from src.config import SAMPLE_CSV, PROCESSED_PARQUET
