@@ -44,3 +44,26 @@ def get_explanation(score: float) -> str:
         str: Explanation.
     """
     return f"Phishing score: {score:.2f}. Based on URL/ HTML features (e.g., length, forms)."
+
+
+def predict(url: str):
+    """
+    Full prediction pipeline for a URL.
+    Returns (score, label, explanation).
+    """
+    # 1. Extract features from URL
+    features = extract_features(url)
+    features = np.array(features).reshape(1, -1)
+
+    # 2. Predict probability [legit, phishing]
+    proba = predict_proba(features)[0]
+    phishing_score = float(proba[1])
+
+    # 3. Convert probability → label
+    label = "phishing" if phishing_score >= 0.5 else "legit"
+
+    # 4. Generate explanation
+    explanation = get_explanation(phishing_score)
+
+    return phishing_score, label, explanation
+
