@@ -7,3 +7,5 @@ pandas
 python-dotenv==1.0.0
 selenium==4.15.0  # Optional for screenshot.py
 pytest==7.4.2
+pyarrow
+fastparquet
