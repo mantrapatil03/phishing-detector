@@ -1,14 +1,26 @@
 """
 Tests for api.py.
-Uses pytest-flask or manual client.
+Uses Flask test client.
 """
 
 import pytest
+from unittest.mock import patch
 from src.api import app
-from src.model import predict
 
 
 @pytest.fixture
 def client():
-	with app.test_client() as client:
-		yield client
+    """Create Flask test client."""
+    with app.test_client() as client:
+        yield client
+
+
+@patch("src.model.predict")
+def test_predict_endpoint(mock_predict, client):
+    """Test /predict API endpoint."""
+    mock_predict.return_value = [0]
+
+    response = client.post("/predict", json={"url": "https://example.com"})
+
+    assert response.status_code == 200
+    assert response.json == {"prediction": [0]}
