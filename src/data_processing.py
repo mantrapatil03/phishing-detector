@@ -14,21 +14,27 @@ logger = logging.getLogger(__name__)
 def load_data() -> pd.DataFrame:
     """
     Load sample URLs from CSV.
-    
-    Returns:
-        pd.DataFrame: DataFrame with 'url' and 'label'.
-    
-    Raises:
-        FileNotFoundError: If CSV missing.
+
+    FIXED:
+    - Do NOT drop URLs based on validate_url()
+    - Only log invalid URLs (because phishing URLs often look "invalid")
     """
     if not os.path.exists(SAMPLE_CSV):
         raise FileNotFoundError(f"{SAMPLE_CSV} not found. Add sample data.")
+
     df = pd.read_csv(SAMPLE_CSV)
+
+    # Normalize but DO NOT filter out anything
     df['url'] = df['url'].apply(normalize_url)
+
+    # Log invalid ones but KEEP all
     invalid = df[~df['url'].apply(validate_url)]
     if not invalid.empty:
-        logger.warning(f"Invalid URLs: {len(invalid)}")
-    return df[df['url'].apply(validate_url)]
+        logger.warning(f"{len(invalid)} URLs flagged invalid by validate_url, keeping them anyway.")
+
+    # Return full dataset
+    return df
+
 
 def process_data() -> pd.DataFrame:
     """
