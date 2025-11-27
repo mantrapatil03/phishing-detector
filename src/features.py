@@ -36,17 +36,33 @@ def extract_url_features(url: str) -> list[float]:
 
 def fetch_html(url: str) -> str:
     """
-    Fetch HTML.
-    
-    Args:
-        url (str): URL.
-    
-    Returns:
-        str: HTML.
+    Fetch HTML with browser-like headers to bypass 403.
     """
-    response = requests.get(url, timeout=10)
-    response.raise_for_status()
-    return response.text
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/120.0.0.0 Safari/537.36"
+        ),
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Referer": "https://www.google.com/",
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1",
+    }
+
+    try:
+        response = requests.get(url, headers=headers, timeout=10)
+        response.raise_for_status()
+        return response.text
+
+    except requests.HTTPError as e:
+        logger.warning(f"HTML fetch failed for {url}: {e}")
+        raise   # keeps your current fallback logic working
+
+    except Exception as e:
+        logger.error(f"Unexpected error while fetching HTML from {url}: {e}")
+        raise
 
 
 def extract_html_features(html: str) -> list[float]:
@@ -88,7 +104,7 @@ def extract_features(url: str, include_screenshot: bool = False) -> list[float]:
     try:
         html = fetch_html(url)
         html_features = extract_html_features(html)
-    except requests.RequestException as e:
+    except Exception as e:   # <-- FIXED HERE
         logger.warning(f"HTML fetch failed for {url}: {e}")
         html_features = [0.0] * 5
     
@@ -96,7 +112,7 @@ def extract_features(url: str, include_screenshot: bool = False) -> list[float]:
     if include_screenshot:
         try:
             screenshot_hash = get_screenshot_hash(url)
-            features.append(screenshot_hash)  # e.g., perceptual hash value
+            features.append(screenshot_hash)
         except Exception as e:
             logger.warning(f"Screenshot failed for {url}: {e}")
             features.append(0.0)
