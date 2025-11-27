@@ -22,11 +22,11 @@
   <img src="https://img.shields.io/badge/Wiki-Documentation-blue.svg" alt="Wiki" />
   </a>
   <br><br>
-  <a href="https://github.com/mantrapatil03/phishing-detection/stargazers">
-    <img src="https://img.shields.io/github/stars/mantrapatil03/phishing-detection?style=social" alt="GitHub stars" />
+  <a href="https://github.com/mantrapatil03/phishing-detector/stargazers">
+    <img src="https://img.shields.io/github/stars/mantrapatil03/phishing-detector?style=social" alt="GitHub stars" />
   </a>
-  <a href="https://github.com/mantrapatil03/phishing-detection/network/members">
-    <img src="https://img.shields.io/github/forks/mantrapatil03/phishing-detection?style=social" alt="GitHub forks" />
+  <a href="https://github.com/mantrapatil03/phishing-detector/network/members">
+    <img src="https://img.shields.io/github/forks/mantrapatil03/phishing-detector?style=social" alt="GitHub forks" />
   </a>
 </p>
 
