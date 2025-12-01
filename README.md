@@ -9,11 +9,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/mantrapatil03/phishing-detection/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/mantrapatil03/phishing-detection/ci.yml?label=CI%2FCD&logo=github" alt="CI/CD" />
+  <a href="https://github.com/mantrapatil03/phishing-detector/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/mantrapatil03/phishing-detector/ci.yml?label=CI%2FCD&logo=github" alt="CI/CD" />
   </a>
   <img src="https://img.shields.io/badge/Python-3.10%2B-blue.svg" alt="Python 3.10+" />
-  <a href="https://github.com/mantrapatil03/phishing-detection/blob/main/LICENSE">
+  <a href="https://github.com/mantrapatil03/phishing-detector/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT" />
   </a>
   <img src="https://img.shields.io/badge/Docker-ready-blue.svg" alt="Docker ready" />
